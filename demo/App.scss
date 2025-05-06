@@ -1,0 +1,81 @@
+#root {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+$defaultBackgroundButton: hsl(70.47deg 75.63% 38.63%);
+$defaultTextColorButton: #000000;
+$defaultBackgroundoverlays :hsl(70.47deg 75.63% 38.63% / 85%);
+
+.custom-modal {
+
+  .modal-overlay {
+    background-color: $defaultBackgroundoverlays;
+  }
+
+  .modal-footer {
+    gap: 20px;
+  }
+
+  .modal-border {
+    --border-radius: 8px;
+    --border-width: 3px;
+  }
+
+  .modal-container {
+    border-color: $defaultBackgroundButton;
+  }
+
+  .modal-btn {
+    background-color: $defaultBackgroundButton ;
+    color: $defaultTextColorButton ;
+    border: 2px solid;
+    min-width: 90px;
+  }
+
+  .modal-btn-confirm {
+
+    &:hover {
+      background-color: green;
+      border-color: green;
+      color: white;
+    }
+  }
+
+  .modal-btn-cancel {
+    background-color: transparent;
+    border-color: $defaultBackgroundButton;
+
+    &:hover {
+      background-color: red;
+      border-color: red;
+      color: white;
+    }
+  }
+
+  .modal-btn:focus-visible,
+  .modal-close:focus-visible {
+    outline: 5px solid hsl(70.47deg 75.63% 38.63% / 52%);
+  }
+
+  .modal-forceFocusVisible {
+    outline: none;
+  }
+
+  .modal-container-success {
+    padding: 15px;
+
+    .modal-content {
+      margin: 0;
+    }
+  }
+}
+
+.test-content {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}

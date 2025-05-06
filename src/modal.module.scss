@@ -1,0 +1,196 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: overlayFadeIn 0.3s ease-out;
+}
+
+.overlayFadeOut {
+    animation: overlayFadeOut 0.3s ease-out forwards;
+}
+
+.container {
+    --border-radius: 8px;
+    --border-width: 2px;
+
+    box-sizing: border-box;
+
+    background: white;
+    border-width: var(--border-width);
+    border-style: solid;
+    border-color: black;
+
+    border-radius: var(--border-radius);
+    padding: 24px;
+    margin: 24px;
+    position: relative;
+    max-height: 90vh;
+    animation: modalFadeIn 0.3s ease-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.success {
+    border-width: var(--border-width);
+    border-style: solid;
+    border-color: #28a745;
+    background-color: #d4edda;
+}
+
+.error {
+    border-width: var(--border-width);
+    border-style: solid;
+    border-color: red;
+    background-color: #f8d7da;
+}
+
+.containerFadeOut {
+    animation: modalFadeOut 0.3s ease-out forwards;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    margin-block: 24px;
+}
+
+.footer {
+    margin-top: 24px;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+}
+
+button.btn {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+button.cancel {
+    background: #ccc;
+    color: #000;
+}
+
+button.cancel:hover {
+    background-color: red;
+    color: white;
+}
+
+button.confirm {
+    background: #007bff;
+    color: white;
+}
+
+button.confirm:hover {
+    background-color: green;
+}
+
+button.close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 28px;
+    height: 28px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border-radius: 0 calc(var(--border-radius) - var(--border-width)) 0 calc(var(--border-radius) - var(--border-width));
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+button.close:hover {
+    background-color: red;
+    color: black;
+}
+
+button.btn:focus-visible,
+button.close:focus-visible,
+button.forceFocusVisible {
+    outline: 3px solid #66afe9;
+    outline-offset: 2px;
+    border-radius: 8px;
+    transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease, outline 0.2s ease-in-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes modalFadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes overlayFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes overlayFadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@media (max-width:780px) {
+    .container {
+        margin: 8px;
+    }
+
+}

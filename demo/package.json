@@ -1,0 +1,28 @@
+{
+  "name": "demo-ptdx-modal",
+  "version": "0.0.1",
+  "private": true,
+  "description": "customizable modal for confirmation, information, alert and action",
+
+  "author": "PierreTDX",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-syntax-highlighter": "^15.6.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "sass": "^1.86.3",
+    "vite": "^5.0.0"
+  },
+
+  "homepage": "https://ptdx-modal.vercel.app/",
+  "github" :"https://github.com/PierreTDX/tdx-modal"
+}
