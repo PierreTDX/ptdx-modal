@@ -1,6 +1,6 @@
 {
   "name": "@ptdx/modal",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "customizable modal for confirmation, information, alert and action",
   "main": "dist/@ptdx-modal.umd.js",
   "module": "dist/@ptdx-modal.es.js",
