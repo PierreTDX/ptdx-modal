@@ -10,7 +10,7 @@
 Try it here: [https://ptdx-modal.vercel.app](https://ptdx-modal.vercel.app/)  
 [npm i @ptdx/modal](https://www.npmjs.com/package/@ptdx/modal)  
 [GitHub](https://github.com/PierreTDX/tdx-modal)  
-ReadMe [Fr version](https://raw.githubusercontent.com/PierreTDX/ptdx-modal/main/README.fr.md)
+ReadMe [Fr version](https://github.com/PierreTDX/ptdx-modal/blob/main/README.fr.md)
 
 ## ✨ Features
 
