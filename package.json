@@ -1,6 +1,6 @@
 {
   "name": "@ptdx/modal",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "customizable modal for confirmation, information, alert and action",
   "main": "dist/@ptdx-modal.umd.js",
   "module": "dist/@ptdx-modal.es.js",
@@ -32,5 +32,8 @@
   },
 
   "homepage": "https://ptdx-modal.vercel.app/",
-  "github" :"https://github.com/PierreTDX/tdx-modal"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PierreTDX/ptdx-modal"
+  }
 }
