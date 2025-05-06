@@ -65,21 +65,21 @@ export default App;
 
 ## 🧩 Props
 
-| Nom           | Type        | Requis  | Description                                                                |
-|---------------|-------------|---------|----------------------------------------------------------------------------|
-| `isOpen`      | `boolean`   | ✅     | Contrôle l'affichage de la modal                                            |
-| `onClose`     | `function`  | ✅     | Fonction appelée lors de la fermeture                                       |
-| `onConfirm`   | `function`  | ❌     | Fonction appelée lors de la confirmation                                    |
-| `title`       | `string`    | ❌     | Titre de la modal                                                           |
-| `content`     | `string`    | ❌     | Contenu du texte de la modal                                                |
-| `confirmText` | `string`    | ❌     | Texte du bouton de confirmation **default**= 'OK'                           |
-| `cancelText`  | `string`    | ❌     | Texte du bouton de d'annulation **default**= 'Cancel'                       |
-| `btnClose`    | `boolean`   | ❌     | Affichage de la croix de fermeture **default**= {true}                      |
-| `showFooter`  | `boolean`   | ❌     | Affichage des boutons d'action **default**= {true}                          |
-| `variant`     | `string`    | ❌     | Couleur de la modal **default**= 'default' / options = 'success' or 'error' |
-| `timeToClose` | `number`    | ❌     | Temps de fermeture de la modal en ms **default**= {null}                    |
-| `width`       | `string`    | ❌     | Largeur de la modal **default**= '400px'                                    |
-| `className`   | `string`    | ❌     | Nom de votre class personnalisée **default**= 'modal-wrapper'               |
+| Nom           | Type                 | Requis  | Description                                                                |
+|---------------|----------------------|---------|----------------------------------------------------------------------------|
+| `isOpen`      | `boolean`            | ✅     | Contrôle l'affichage de la modal                                            |
+| `onClose`     | `function`           | ✅     | Fonction appelée lors de la fermeture                                       |
+| `onConfirm`   | `function`           | ❌     | Fonction appelée lors de la confirmation                                    |
+| `title`       | `string \| ReactNode`| ❌     | Titre de la modal, accepte texte ou JSX                                     |
+| `content`     | `string \| ReactNode`| ❌     | Contenu du texte de la modal, accepte texte ou JSX                          |
+| `confirmText` | `string`             | ❌     | Texte du bouton de confirmation **default**= 'OK'                           |
+| `cancelText`  | `string`             | ❌     | Texte du bouton de d'annulation **default**= 'Cancel'                       |
+| `btnClose`    | `boolean`            | ❌     | Affichage de la croix de fermeture **default**= {true}                      |
+| `showFooter`  | `boolean`            | ❌     | Affichage des boutons d'action **default**= {true}                          |
+| `variant`     | `string`             | ❌     | Couleur de la modal **default**= 'default' / options = 'success' or 'error' |
+| `timeToClose` | `number`             | ❌     | Temps de fermeture de la modal en ms **default**= {null}                    |
+| `width`       | `string`             | ❌     | Largeur de la modal **default**= '400px'                                    |
+| `className`   | `string`             | ❌     | Nom de votre class personnalisée **default**= 'modal-wrapper'               |
 
 ---
 

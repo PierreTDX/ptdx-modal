@@ -9,6 +9,7 @@ function App() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isVariantModalOpen, setIsVariantModalOpen] = useState(false);
+  const [isJsxModalOpen, setIsJsxModalOpen] = useState(false);
   const [isCustomModalOpen, setIsCustomModalOpen] = useState(false);
   const [isValidateCustomModalOpen, setIsValidateCustomModalOpen] = useState(false);
 
@@ -97,6 +98,49 @@ export default App`}
   content='custom modal text, custom modal text...'
   variant='error'
   timeToClose={2000}
+/>`}
+          </SyntaxHighlighter>
+        </div>
+        <div className='test-content'>
+          <button onClick={() => setIsJsxModalOpen(true)}>
+            Open JSX content Modal
+          </button>
+          <br />
+          <br />
+          <Modal
+            isOpen={isJsxModalOpen}
+            onClose={() => { setIsJsxModalOpen(false) }}
+            onConfirm={() => { setIsJsxModalOpen(false) }}
+            title='Title of the modal'
+            content={
+              <div>
+                <p>Example Jsx content</p>
+                <br />
+                <form style={{ display: 'flex', flexDirection: 'column' }}>
+                  <label htmlFor="">e-mail</label>
+                  <input type="mail" style={{ height: '20px', borderRadius: '8px' }} />
+                  <label htmlFor="">password</label>
+                  <input type="password" style={{ height: '20px', borderRadius: '8px' }} />
+                </form>
+              </div>
+            }
+          />
+          <SyntaxHighlighter language="jsx" style={vscDarkPlus} showLineNumbers wrapLines>
+            {`<Modal
+  isOpen={isModalOpen}
+  onClose={() => { setIsModalOpen(false) }}
+  onConfirm={() => { setIsModalOpen(false) }} // and other function you need
+  title='Title of the modal'
+  content={
+    <div>
+      <form>
+        <label htmlFor="mail">e-mail</label>
+        <input type="mail"/>
+        <label htmlFor="password">password</label>
+        <input type="password"/>
+      </form>
+    </div>
+  }
 />`}
           </SyntaxHighlighter>
         </div>
@@ -229,7 +273,7 @@ $defaultBackgroundoverlays :hsl(70.47deg 75.63% 38.63% / 85%);
 }`}
           </SyntaxHighlighter>
         </div>
-      </div>
+      </div >
     </>
   )
 }

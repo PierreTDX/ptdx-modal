@@ -65,21 +65,21 @@ export default App;
 
 ## 🧩 Props
 
-| Name          | Type        | Required | Description                                                                |
-|---------------|-------------|----------|----------------------------------------------------------------------------|
-| `isOpen`      | `boolean`   | ✅       | Controls modal visibility                                                  |
-| `onClose`     | `function`  | ✅       | Called when modal is closed                                                |
-| `onConfirm`   | `function`  | ❌       | Called when confirmation button is clicked                                |
-| `title`       | `string`    | ❌       | Modal title                                                                |
-| `content`     | `string`    | ❌       | Modal content text                                                         |
-| `confirmText` | `string`    | ❌       | Confirmation button text **default** = 'OK'                                |
-| `cancelText`  | `string`    | ❌       | Cancel button text **default** = 'Cancel'                                  |
-| `btnClose`    | `boolean`   | ❌       | Show close (X) button **default** = `true`                                 |
-| `showFooter`  | `boolean`   | ❌       | Show footer with action buttons **default** = `true`                       |
-| `variant`     | `string`    | ❌       | Modal color theme **default** = 'default' / options: 'success' or 'error' |
-| `timeToClose` | `number`    | ❌       | Auto-close delay in milliseconds **default** = `null`                      |
-| `width`       | `string`    | ❌       | Modal width **default** = '400px'                                          |
-| `className`   | `string`    | ❌       | Custom class name **default** = 'modal-wrapper'                            |
+| Name          | Type                  | Required | Description                                                                |
+|---------------|-----------------------|----------|----------------------------------------------------------------------------|
+| `isOpen`      | `boolean`             | ✅       | Controls modal visibility                                                  |
+| `onClose`     | `function`            | ✅       | Called when modal is closed                                                |
+| `onConfirm`   | `function`            | ❌       | Called when confirmation button is clicked                                 |
+| `title`       | `string \| ReactNode` | ❌       | Modal title, accepts a string or JSX                                       |
+| `content`     | `string \| ReactNode` | ❌       | Modal content, accepts a string or JSX                                     |
+| `confirmText` | `string`              | ❌       | Confirmation button text **default** = 'OK'                                |
+| `cancelText`  | `string`              | ❌       | Cancel button text **default** = 'Cancel'                                  |
+| `btnClose`    | `boolean`             | ❌       | Show close (X) button **default** = `true`                                 |
+| `showFooter`  | `boolean`             | ❌       | Show footer with action buttons **default** = `true`                       |
+| `variant`     | `string`              | ❌       | Modal color theme **default** = 'default' / options: 'success' or 'error'  |
+| `timeToClose` | `number`              | ❌       | Auto-close delay in milliseconds **default** = `null`                      |
+| `width`       | `string`              | ❌       | Modal width **default** = '400px'                                          |
+| `className`   | `string`              | ❌       | Custom class name **default** = 'modal-wrapper'                            |
 
 ---
 
