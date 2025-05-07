@@ -18,7 +18,6 @@ ReadMe [Fr version](https://github.com/PierreTDX/ptdx-modal/blob/main/README.fr.
 - ✅ Keyboard support and outside click detection
 - ✅ Minimalist design, easy to customize
 - ✅ Renders with `ReactDOM.createPortal`
-- ✅ Zero external dependencies
 
 ---
 
@@ -118,6 +117,11 @@ The component uses base CSS classes. You can override them using your global sty
 ```bash
 git clone https://github.com/PierreTDX/ptdx-modal.git
 cd ptdx-modal
+npm install
+```
+and to test the demo
+```bash
+cd demo
 npm install
 npm run dev
 ```

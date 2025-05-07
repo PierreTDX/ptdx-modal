@@ -18,7 +18,6 @@ ReadMe [En version](https://github.com/PierreTDX/ptdx-modal/blob/main/README.md)
 - ✅ Support du clavier et clic en dehors de la modal
 - ✅ Design minimaliste, facilement personnalisable
 - ✅ Rendu via `ReactDOM.createPortal`
-- ✅ Pas de dépendances externes
 
 ---
 
@@ -117,6 +116,11 @@ Le composant utilise des classes CSS de base. Vous pouvez surcharger les styles 
 ```bash
 git clone https://github.com/PierreTDX/ptdx-modal.git
 cd ptdx-modal
+npm install
+```
+et pour tester la demo
+```bash
+cd demo
 npm install
 npm run dev
 ```
