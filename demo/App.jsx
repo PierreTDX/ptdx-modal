@@ -20,7 +20,7 @@ function App() {
         <p>npm package for a React modal</p>
         <br />
         <br />
-        <h2>Global integration example</h2>
+        <h2 className='title-effect'>Global integration example</h2>
         <SyntaxHighlighter language="jsx" style={vscDarkPlus} showLineNumbers customStyle={{ borderRadius: '5px' }}>
           {`// integration example
 import { useState } from 'react'
@@ -50,7 +50,7 @@ export default App`}
         </SyntaxHighlighter>
         <br />
         <br />
-        <h2>examples of modals</h2>
+        <h2 className='title-effect'>examples of modals</h2>
         <div className='test-content'>
           <button onClick={() => setIsModalOpen(true)}>
             Open Default Modal
