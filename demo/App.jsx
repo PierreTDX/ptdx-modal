@@ -16,12 +16,12 @@ function App() {
   return (
     <>
       <div>
-        <h1><a href="https://www.npmjs.com/package/@ptdx/modal">npm i @ptdx/modal</a></h1>
+        <h1><a className="link" href="https://www.npmjs.com/package/@ptdx/modal">npm i @ptdx/modal</a></h1>
         <p>npm package for a React modal</p>
         <br />
         <br />
         <h2>Global integration example</h2>
-        <SyntaxHighlighter language="jsx" style={vscDarkPlus} showLineNumbers>
+        <SyntaxHighlighter language="jsx" style={vscDarkPlus} showLineNumbers customStyle={{ borderRadius: '5px' }}>
           {`// integration example
 import { useState } from 'react'
 import { Modal } from '@ptdx/modal'
@@ -64,7 +64,7 @@ export default App`}
             title='Title of the modal'
             content='custom modal text, custom modal text...'
           />
-          <SyntaxHighlighter language="jsx" style={vscDarkPlus} showLineNumbers wrapLines>
+          <SyntaxHighlighter language="jsx" style={vscDarkPlus} showLineNumbers wrapLines customStyle={{ borderRadius: '5px' }}>
             {`<Modal
   isOpen={isModalOpen}
   onClose={() => { setIsModalOpen(false) }}
@@ -89,7 +89,7 @@ export default App`}
             variant='error'
             timeToClose={2000}
           />
-          <SyntaxHighlighter language="jsx" style={vscDarkPlus} showLineNumbers>
+          <SyntaxHighlighter language="jsx" style={vscDarkPlus} showLineNumbers wrapLines customStyle={{ borderRadius: '5px' }}>
             {`<Modal
   isOpen={isVariantModalOpen}
   onClose={() => { setIsVariantModalOpen(false) }}
@@ -125,7 +125,7 @@ export default App`}
               </div>
             }
           />
-          <SyntaxHighlighter language="jsx" style={vscDarkPlus} showLineNumbers wrapLines>
+          <SyntaxHighlighter language="jsx" style={vscDarkPlus} showLineNumbers wrapLines customStyle={{ borderRadius: '5px' }}>
             {`<Modal
   isOpen={isModalOpen}
   onClose={() => { setIsModalOpen(false) }}
@@ -175,7 +175,7 @@ export default App`}
             timeToClose={2000}
             className="custom-modal"
           />
-          <SyntaxHighlighter language="jsx" style={vscDarkPlus} showLineNumbers>
+          <SyntaxHighlighter language="jsx" style={vscDarkPlus} showLineNumbers wrapLines customStyle={{ borderRadius: '5px' }}>
             {`<Modal
   isOpen={isCustomModalOpen}
   onClose={() => { setIsCustomModalOpen(false) }}
@@ -201,17 +201,19 @@ export default App`}
   className="custom-modal"
 />`}
           </SyntaxHighlighter>
-          <SyntaxHighlighter language="css" style={vscDarkPlus} showLineNumbers>
+          <SyntaxHighlighter language="css" style={vscDarkPlus} showLineNumbers customStyle={{ borderRadius: '5px' }}>
             {`/* scss custom example*/
 
 $defaultBackgroundButton: hsl(70.47deg 75.63% 38.63%);
 $defaultTextColorButton: #000000;
-$defaultBackgroundoverlays :hsl(70.47deg 75.63% 38.63% / 85%);
+$defaultBackgroundOverlay :hsl(70.47deg 75.63% 38.63% / 85%);
+$defaultOutlineColor :hsl(70.47deg 75.63% 38.63% / 52%);
+
 
 .custom-modal {
 
   .modal-overlay {
-    background-color: $defaultBackgroundoverlays;
+    background-color: $defaultBackgroundOverlay;
   }
 
   .modal-footer {
@@ -256,7 +258,7 @@ $defaultBackgroundoverlays :hsl(70.47deg 75.63% 38.63% / 85%);
 
   .modal-btn:focus-visible,
   .modal-close:focus-visible {
-    outline: 5px solid hsl(70.47deg 75.63% 38.63% / 52%);
+    outline: 5px solid $defaultOutlineColor;
   }
 
   .modal-forceFocusVisible {

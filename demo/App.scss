@@ -1,3 +1,7 @@
+body {
+  background-color: #f9f9f9;
+}
+
 #root {
   max-width: 768px;
   margin: 0 auto;
@@ -5,9 +9,53 @@
   text-align: center;
 }
 
+h2 {
+  text-shadow: -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff,
+    1px 1px 3px #141414;
+}
+
+.test-content {
+  padding: 20px;
+  // border: 1px solid;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  button {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  button:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transform: translateY(2px);
+  }
+
+  button:focus,
+  button:focus-visible {
+    outline: 3px solid #acd872;
+    outline-offset: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transform: translateY(2px);
+  }
+}
+
+.link:focus-visible {
+  outline: 5px solid #535bf2;
+  outline-offset: 2px;
+  border-radius: 5px;
+}
+
+.link:hover {
+  color: #747bff;
+}
+
 $defaultBackgroundButton: hsl(70.47deg 75.63% 38.63%);
 $defaultTextColorButton: #000000;
-$defaultBackgroundoverlays :hsl(70.47deg 75.63% 38.63% / 85%);
+$defaultBackgroundoverlays : hsl(70.47deg 75.63% 38.63% / 85%);
 
 .custom-modal {
 
@@ -71,11 +119,4 @@ $defaultBackgroundoverlays :hsl(70.47deg 75.63% 38.63% / 85%);
       margin: 0;
     }
   }
-}
-
-.test-content {
-  padding: 10px;
-  border: 1px solid;
-  border-radius: 5px;
-  margin-bottom: 20px;
 }
